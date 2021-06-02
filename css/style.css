@@ -20,7 +20,6 @@ body {
 	padding: 0 15px;
 }
 
-
 /*--------------- header ---------------*/
 
 .header {
@@ -64,20 +63,21 @@ body {
 	color: #54af3a;
 }
 
-/*--------------- type-model ---------------*/
+/*--------------- product-type ---------------*/
+
 .wrapper {
 	background-color: #e8f5fd;
 	padding: 25px 0;
 }
-.type-model {
+.product-type {
 	padding: 25px 0;
 }
-.type-model__inner {
+.product-type__inner {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.type-model__picture {
+.product-type__picture {
 	width: 270px;
     margin-top: 50px;
 }
@@ -85,8 +85,8 @@ body {
 	max-width: 270px;
 }
 /* width */
-.picture__size-field-bottom,
-.picture__size-field {
+.size-field-bottom,
+.size-field {
 	display: flex;
 }
 /* Put your information there for width
@@ -111,13 +111,13 @@ body {
 	width: 45%;
 }
 /* type-2 bottom-width */
-.type-2 .picture__size-field-bottom .size-field__step-right {
+.type-2 .size-field-bottom .size-field__step-right {
 	width: 12%;
 }
-.type-2 .picture__size-field-bottom .picture__width {
+.type-2 .size-field-bottom .picture__width {
 	width: 64%;
 }
-.type-2 .picture__size-field-bottom .size-field__step-left {
+.type-2 .size-field-bottom .size-field__step-left {
 	width:24%;
 }
 /* type-3 top-width */
@@ -131,13 +131,13 @@ body {
 	width: 34.5%;
 }
 /* type-3 bottom-width */
-.type-3 .picture__size-field-bottom .size-field__step-right {
+.type-3 .size-field-bottom .size-field__step-right {
 	width: 0%;
 }
-.type-3 .picture__size-field-bottom .picture__width {
+.type-3 .size-field-bottom .picture__width {
 	width: 85%;
 }
-.type-3 .picture__size-field-bottom .size-field__step-left {
+.type-3 .size-field-bottom .size-field__step-left {
 	width:13%;
 }
 /* ----------------------------- */
@@ -219,9 +219,16 @@ body {
 	top: 0;
 	color: #00a2e6;
 }
-.picture__size-field-bottom .size-width{
+.size-field-bottom .size-width{
     top: 20px;
 }
+.picrure__img {
+	display: block;
+	margin: 0 auto;
+	max-width: 235px;
+	max-height: 275px;
+}
+/* height */
 .size-height {
 	top: 50%;
 	left: -40px;
@@ -234,13 +241,6 @@ body {
 	position: absolute;
 	color: #00a2e6;
 }
-.picrure__img {
-	display: block;
-	margin: 0 auto;
-	max-width: 235px;
-	max-height: 275px;
-}
-/* height */
 .picture__block {
 	display: flex;
 	justify-content: center;
@@ -283,6 +283,7 @@ body {
 	background-color: #00a2e6;
 	display: block;
 }
+
 /*--------------- table ---------------*/
 
 .table {
@@ -293,7 +294,6 @@ body {
     grid-template-rows: repeat(10, auto);
     grid-auto-flow: column;
     justify-content: stretch;
-
 }
 .table__item-icon {
     display: flex;
@@ -313,10 +313,15 @@ body {
     border-top: none;
     padding: 15px 20px;
 }
+.table__item p{
+	max-width: 175px;
+}
+/* table options classes */
 .table__item--title{
     background-color: #00a0e3;
     border:1px solid #fff;
     font-size: 1.3rem;
+    font-weight: 500;
     color: #fff;
     text-transform: uppercase;
 }
@@ -329,26 +334,32 @@ body {
     border: 1px solid #54af3a;
     border-top:none;
 }
-/*--------------- active ---------------*/
-
+.no-left-border{
+    border-left:none;
+}
+.no-bottom-border{
+    border-bottom:none;
+}
 .hide {
 	display: none;
 }
+
 /*--------------- @media ---------------*/
+
 @media (max-width: 920px) {
-    .type-model__inner{
+	/* product-type 920 */
+    .product-type__inner{
         flex-direction: column;
     }
     .table{
         width: 100%;
     }
-    .type-model__picture{
+    .product-type__picture{
         margin: 0 auto 50px auto;
     }
-
 }
 @media (max-width: 650px) {
-	/* header  */
+	/* header 650 */
 	.header {
 		padding: 30px 0 40px 0;
 	}
@@ -358,6 +369,10 @@ body {
 	.header__logo {
 		margin: 15px auto 20px auto;
 	}
+	.logo__icon{
+		padding: 0 20px;
+	}
+	/* table 650 */
     .table__item-icon{
         display: none;
     }
@@ -366,6 +381,7 @@ body {
     .container{
         padding: 0 5px;
     }
+	/* table 600 */
     .table__inner{
         display: flex;
         flex-direction: column;
@@ -399,14 +415,10 @@ body {
     .hide-column{
         display: none;
     }
-
 }
-
 @media (max-width: 460px) {
     .table__item::before{
-      
 		font-size:1rem;
-		
     }
 }
 @media (max-width: 320px) {

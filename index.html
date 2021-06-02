@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
 </head>
-<body>
 
-<!-- SVG Sprite  -->
-<svg width="0" height="0" class="hide">
-    <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 581 130" id="logo">
-      <image width="581" height="130" xlink:href="data:img/png;base64,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"></image>
-    </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490" id="left-arrow">
-        <path d="M474.459 0v490L15.541 244.991 474.459 0z"></path>
-    </symbol>
-    
-  </svg>
-<!-- header -->
+<body>
+    <!-- SVG Sprite  -->
+    <svg width="0" height="0" class="hide">
+        <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 581 130"
+            id="logo">
+            <image width="581" height="130"
+                xlink:href="data:img/png;base64,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">
+            </image>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490" id="left-arrow">
+            <path d="M474.459 0v490L15.541 244.991 474.459 0z"></path>
+        </symbol>
+    </svg>
+    <!-- header -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__title">
-                    Прайс на фасадні двері
-                </div>
+                <div class="header__title">Прайс на фасадні двері</div>
                 <div class="header__logo logo">
                     <svg class="logo__icon">
                         <use xlink:href="#logo"></use>
                     </svg>
                 </div>
                 <div class="model">
-                    <p class="model__text">
-                    Модель:
-                    </p>
+                    <p class="model__text">Модель:</p>
                     <a href="#" class="model__name">Lp006</a>
                 </div>
             </div>
         </div>
     </header>
-<!-- type-model -->
+
+    <!-- type-model -->
 
     <div class="wrapper">
-        <section class="type-model">
+        <!-- 1  type -->
+        <section class="type-model type-1">
             <div class="container">
                 <div class="type-model__inner">
                     <div class="type-model__picture picture">
-                        
                         <div class="picture__size-field">
                             <!-- step-left -->
                             <div class="size-field__step-left"></div>
-                            <!-- picture-width --> 
+                            <!-- picture-width -->
                             <div class="picture__width width">
                                 <div class="triangle__wrapper">
                                     <span class="triangle-left">
@@ -63,9 +63,7 @@
                                 </div>
                                 <span class="line-width"></span>
                                 <!-- size-width -->
-                                <div class="size-width">
-                                    950 мм
-                                </div>
+                                <div class="size-width">950 мм</div>
                                 <div class="triangle__wrapper">
                                     <span class="triangle-right">
                                         <svg class="triangle__icon">
@@ -77,11 +75,11 @@
                             <!-- step-right -->
                             <div class="size-field__step-right"></div>
                         </div>
-                        <div class="picture__block">   
+                        <div class="picture__block">
                             <div class="size-field-height">
                                 <!-- step-top -->
                                 <div class="size-field-height__step-top"></div>
-                                 <!-- picture-height -->
+                                <!-- picture-height -->
                                 <div class="picture__height height">
                                     <div class="triangle__wrapper">
                                         <span class="triangle-up">
@@ -92,9 +90,7 @@
                                     </div>
                                     <span class="line-height"></span>
                                     <!-- size-width -->
-                                    <div class="size-height">
-                                        2050мм
-                                    </div>
+                                    <div class="size-height">2050мм</div>
                                     <div class="triangle__wrapper">
                                         <span class="triangle-down">
                                             <svg class="triangle__icon">
@@ -105,21 +101,686 @@
                                 </div>
                                 <!-- step-bottom -->
                                 <div class="size-field-height__step-bottom"></div>
-                            </div>     
+                            </div>
                             <!-- img -->
                             <div class="picture__box">
-                                <img class="picrure__img" src="img/type-model/LP006-1.png" alt="lp006">
+                                <img class="picrure__img" src="img/type-model/LP006-1.png" alt="lp006" />
                             </div>
-                        </div>   
+                        </div>
                     </div>
-                    <div class="type-model__table">
+                    <!-- table -->
+                    <div class="table">
+                        <div class="table__inner">
+                            <!-- icons column -->
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/поріг.png" alt="поріг" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/петлі.png" alt="петлі" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Ручка.png" alt="Ручка" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Замок.png" alt="Замок" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Шпингалет.png" alt="Шпингалет" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Серцевина.png" alt="Серцевина" />
+                            </div>
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon"></div>
 
+                            <!-- 1 column -->
+                            <div class="table__item table__item--title hide-column">
+                                <p>Lampre lP006</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Поріг</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Петлі</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Ручка</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Замок</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Шпингалет</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Серцевина</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>Білий</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>Зовнішня ламінація</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>2-х стороння ламінація</p>
+                            </div>
+
+                            <!-- 2-column -->
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S100</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+
+                            <!-- 3 column -->
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S200</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+
+                            <!-- 4 column -->
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S300</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 2 type -->
+
+        <section class="type-model type-2">
+            <div class="container">
+                <div class="type-model__inner">
+                    <div class="type-model__picture picture">
+                        <div class="picture__size-field">
+                            <!-- step-left -->
+                            <div class="size-field__step-left"></div>
+                            <!-- picture-width -->
+                            <div class="picture__width width">
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-left">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <span class="line-width"></span>
+                                <!-- size-width -->
+                                <div class="size-width">950 мм</div>
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-right">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- step-right -->
+                            <div class="size-field__step-right"></div>
+                        </div>
+                        <div class="picture__block">
+                            <div class="size-field-height">
+                                <!-- step-top -->
+                                <div class="size-field-height__step-top"></div>
+                                <!-- picture-height -->
+                                <div class="picture__height height">
+                                    <div class="triangle__wrapper">
+                                        <span class="triangle-up">
+                                            <svg class="triangle__icon">
+                                                <use xlink:href="#left-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="line-height"></span>
+                                    <!-- size-width -->
+                                    <div class="size-height">2050мм</div>
+                                    <div class="triangle__wrapper">
+                                        <span class="triangle-down">
+                                            <svg class="triangle__icon">
+                                                <use xlink:href="#left-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- step-bottom -->
+                                <div class="size-field-height__step-bottom"></div>
+                            </div>
+                            <!-- img -->
+                            <div class="picture__box">
+                                <img class="picrure__img" src="img/type-model/LP006-2.png" alt="lp006" />
+                            </div>
+                        </div>
+                        <div class="picture__size-field-bottom">
+                            <!-- step-left -->
+                            <div class="size-field__step-left"></div>
+                            <!-- picture-width -->
+                            <div class="picture__width width">
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-left">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <span class="line-width"></span>
+                                <!-- size-width -->
+                                <div class="size-width">1200 мм</div>
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-right">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- step-right -->
+                            <div class="size-field__step-right"></div>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <div class="table">
+                        <div class="table__inner">
+                            <!-- icons column -->
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/поріг.png" alt="поріг" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/петлі.png" alt="петлі" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Ручка.png" alt="Ручка" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Замок.png" alt="Замок" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Шпингалет.png" alt="Шпингалет" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Серцевина.png" alt="Серцевина" />
+                            </div>
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon"></div>
+
+                            <!-- first column -->
+                            <div class="table__item table__item--title hide-column">
+                                <p>Lampre lP006</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Поріг</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Петлі</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Ручка</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Замок</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Шпингалет</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Серцевина</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>Білий</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>Зовнішня ламінація</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>2-х стороння ламінація</p>
+                            </div>
+
+                            <!-- second-column -->
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S100</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+
+                            <!-- third column -->
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S200</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+
+                            <!-- fourth column -->
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S300</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 type -->
+
+        <section class="type-model type-3">
+            <div class="container">
+                <div class="type-model__inner">
+                    <div class="type-model__picture picture">
+                        <div class="picture__size-field">
+                            <!-- step-left -->
+                            <div class="size-field__step-left"></div>
+                            <!-- picture-width -->
+                            <div class="picture__width width">
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-left">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <span class="line-width"></span>
+                                <!-- size-width -->
+                                <div class="size-width">950 мм</div>
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-right">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- step-right -->
+                            <div class="size-field__step-right"></div>
+                        </div>
+                        <div class="picture__block">
+                            <div class="size-field-height">
+                                <!-- step-top -->
+                                <div class="size-field-height__step-top"></div>
+                                <!-- picture-height -->
+                                <div class="picture__height height">
+                                    <div class="triangle__wrapper">
+                                        <span class="triangle-up">
+                                            <svg class="triangle__icon">
+                                                <use xlink:href="#left-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <span class="line-height"></span>
+                                    <!-- size-width -->
+                                    <div class="size-height">2050мм</div>
+                                    <div class="triangle__wrapper">
+                                        <span class="triangle-down">
+                                            <svg class="triangle__icon">
+                                                <use xlink:href="#left-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- step-bottom -->
+                                <div class="size-field-height__step-bottom"></div>
+                            </div>
+                            <!-- img -->
+                            <div class="picture__box">
+                                <img class="picrure__img" src="img/type-model/LP006-3.png" alt="lp006" />
+                            </div>
+                        </div>
+                        <div class="picture__size-field-bottom">
+                            <!-- step-left -->
+                            <div class="size-field__step-left"></div>
+                            <!-- picture-width -->
+                            <div class="picture__width width">
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-left">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <span class="line-width"></span>
+                                <!-- size-width -->
+                                <div class="size-width">1450 мм</div>
+                                <div class="triangle__wrapper">
+                                    <span class="triangle-right">
+                                        <svg class="triangle__icon">
+                                            <use xlink:href="#left-arrow"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- step-right -->
+                            <div class="size-field__step-right"></div>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <div class="table">
+                        <div class="table__inner">
+                            <!-- icons column -->
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/поріг.png" alt="поріг" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/петлі.png" alt="петлі" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Ручка.png" alt="Ручка" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Замок.png" alt="Замок" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Шпингалет.png" alt="Шпингалет" />
+                            </div>
+                            <div class="table__item-icon">
+                                <img src="/img/type-model/Серцевина.png" alt="Серцевина" />
+                            </div>
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon"></div>
+                            <div class="table__item-icon"></div>
+
+                            <!-- 1 column -->
+                            <div class="table__item table__item--title hide-column">
+                                <p>Lampre lP006</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Поріг</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Петлі</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Ручка</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Замок</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Шпингалет</p>
+                            </div>
+                            <div class="table__item hide-column">
+                                <p>Серцевина</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>Білий</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>Зовнішня ламінація</p>
+                            </div>
+                            <div class="table__item table__item--green-back hide-column">
+                                <p>2-х стороння ламінація</p>
+                            </div>
+
+                            <!-- 2-column -->
+
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S100</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+
+                            <!-- 3 column -->
+
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S200</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+
+                            <!-- 4 column -->
+
+                            <div class="table__item table__item--title table__item--title-margin"
+                                data-label="Lampre lP006">
+                                <p>S300</p>
+                            </div>
+                            <div class="table__item" data-label='Поріг'>
+                                <p>Алюмінієвий теплий поріг висотою 20 мм</p>
+                            </div>
+                            <div class="table__item" data-label='Петлі'>
+                                <p>Роликові петли, З шт. 3D регулювання</p>
+                            </div>
+                            <div class="table__item" data-label='Ручка'>
+                                <p>Нажимна/Рейлингова</p>
+                            </div>
+                            <div class="table__item" data-label='Замок'>
+                                <p>Багаточкова рейка вид ручки Vorne (TR)</p>
+                            </div>
+                            <div class="table__item" data-label='Шпингалет'>
+                                <p>Vorne Econom</p>
+                            </div>
+                            <div class="table__item" data-label='Серцевина'>
+                                <p>Apecs</p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Білий'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='Зовнішня ламінація'>
+                                <p></p>
+                            </div>
+                            <div class="table__item table__item--green-border" data-label='2-х стороння ламінація'>
+                                <p></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    
-
 </body>
+
 </html>
